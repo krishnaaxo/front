@@ -19,7 +19,7 @@ const Dashboard = ({ username, callState }) => {
     // HERE PLACE YOUR BACKEND SERVER ADDRESS TO FETCH TURN CREDENTIALS
     axios
       .get(
-        "https://videotalkerbackend.herokuapp.com"
+        "https://videotalkerbackend.herokuapp.com/api/get-turn-credentials"
       )
       .then((responseData) => {
         console.log(responseData);
